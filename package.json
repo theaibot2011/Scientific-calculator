@@ -1,0 +1,86 @@
+{
+  "name": "graphite-scientific",
+  "version": "1.1.1",
+  "description": "Premium offline scientific calculator with natural math display",
+  "main": "src/main/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/engine.test.mjs",
+    "test:ui": "xvfb-run -a node test/ui.test.cjs",
+    "fonts": "node scripts/copy-fonts.mjs",
+    "icons": "node scripts/make-icons.cjs",
+    "dist": "electron-builder --win nsis portable --x64"
+  },
+  "keywords": [],
+  "author": "Graphite Scientific",
+  "license": "MIT",
+  "devDependencies": {
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/jetbrains-mono": "^5.1.0",
+    "@fontsource/stix-two-text": "^5.1.0",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "png-to-ico": "^2.1.8",
+    "resedit": "^2.0.3"
+  },
+  "type": "module",
+  "productName": "Graphite Scientific",
+  "build": {
+    "appId": "com.graphite.scientific",
+    "productName": "Graphite Scientific",
+    "copyright": "Copyright © 2026 Graphite Scientific",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "build/icon.ico",
+      "build/icon.png",
+      "package.json",
+      "!src/**/*.map"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "legalTrademarks": "Graphite Scientific",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Graphite Scientific",
+      "artifactName": "Graphite-Scientific-Setup-${version}.${ext}",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "uninstallDisplayName": "Graphite Scientific",
+      "license": "LICENSE.txt"
+    },
+    "portable": {
+      "artifactName": "Graphite-Scientific-${version}-portable.${ext}"
+    },
+    "electronLanguages": [
+      "en-US",
+      "en-GB"
+    ],
+    "afterPack": "./scripts/after-pack.cjs",
+    "publish": null
+  }
+}

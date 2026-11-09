@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#3a3c41"/><stop offset="1" stop-color="#1a1b1e"/></linearGradient>
+    <linearGradient id="lcd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14181a"/><stop offset="1" stop-color="#0a0c0d"/></linearGradient>
+    <linearGradient id="eq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2b555"/><stop offset="1" stop-color="#dc9a34"/></linearGradient>
+  </defs>
+  <rect x="16" y="8" width="224" height="240" rx="52" fill="url(#body)"/>
+  <rect x="16.5" y="8.5" width="223" height="239" rx="51.5" fill="none" stroke="#ffffff" stroke-opacity=".10"/>
+  <rect x="40" y="32" width="176" height="80" rx="16" fill="url(#lcd)"/>
+  <g fill="#eceee9" font-family="Georgia, 'Times New Roman', serif">
+    <text x="62" y="71" font-size="30">1</text>
+    <rect x="57" y="78" width="27" height="3.5" rx="1.5"/>
+    <text x="62" y="104" font-size="30">2</text>
+    <path d="M118 77 l7 -3 l9 24 l13 -50 h52" fill="none" stroke="#eceee9" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="153" y="96" font-size="36" font-style="italic">x</text>
+  </g>
+  <g>
+    <rect x="40" y="134" width="48" height="36" rx="11" fill="#4a4c52"/>
+    <rect x="104" y="134" width="48" height="36" rx="11" fill="#4a4c52"/>
+    <rect x="168" y="134" width="48" height="36" rx="11" fill="#a8573a"/>
+    <rect x="40" y="186" width="48" height="36" rx="11" fill="#4a4c52"/>
+    <rect x="104" y="186" width="48" height="36" rx="11" fill="#4a4c52"/>
+    <rect x="168" y="186" width="48" height="36" rx="11" fill="url(#eq)"/>
+    <path d="M181 200h22M181 208h22" stroke="#1d1d1f" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

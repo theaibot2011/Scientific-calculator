@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; script-src 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graphite Scientific</title>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="graphite">
+  <header class="titlebar" id="titlebar">
+    <div class="tb-left">
+      <svg class="tb-logo" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="2.5" width="17" height="19" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="6.5" y="5.5" width="11" height="4.5" rx="1" fill="currentColor" opacity=".85"/><circle cx="8.5" cy="14" r="1.1" fill="currentColor"/><circle cx="12" cy="14" r="1.1" fill="currentColor"/><circle cx="15.5" cy="14" r="1.1" fill="currentColor"/><circle cx="8.5" cy="17.6" r="1.1" fill="currentColor"/><circle cx="12" cy="17.6" r="1.1" fill="currentColor"/><rect x="14.4" y="16.5" width="2.2" height="2.2" rx=".5" fill="currentColor"/></svg>
+      <span class="tb-title">Graphite Scientific</span>
+      <span class="tb-mode" id="tbMode">COMP</span>
+    </div>
+    <div class="tb-right">
+      <button class="tb-btn" id="btnPanel" title="Toggle side panel (Ctrl+H)" aria-label="Toggle side panel">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="14.5" y1="4.5" x2="14.5" y2="19.5" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+      <button class="tb-btn" id="btnPin" title="Always on top" aria-label="Always on top">
+        <svg viewBox="0 0 24 24"><path d="M9 3h6l-1 6 3 3v2H7v-2l3-3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="12" y1="14" x2="12" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <span class="tb-sep"></span>
+      <button class="tb-btn win" id="btnMin" aria-label="Minimise"><svg viewBox="0 0 24 24"><line x1="6" y1="12.5" x2="18" y2="12.5" stroke="currentColor" stroke-width="1.4"/></svg></button>
+      <button class="tb-btn win" id="btnMax" aria-label="Maximise"><svg viewBox="0 0 24 24"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+      <button class="tb-btn win close" id="btnClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+    </div>
+  </header>
+
+  <main class="app" id="app">
+    <section class="stage" id="stage">
+      <div class="device" id="device">
+        <div class="brand">
+          <div class="brand-name">GRAPHITE<span>SCIENTIFIC</span></div>
+          <div class="brand-model">GS-1 <em>NATURAL MATH</em></div>
+        </div>
+        <div class="bezel">
+          <div class="lcd" id="lcd" tabindex="-1"></div>
+        </div>
+        <div class="solar"><div class="cells"><span></span><span></span><span></span><span></span></div></div>
+        <div class="keypad" id="keypad"></div>
+      </div>
+    </section>
+
+    <aside class="panel" id="panel">
+      <nav class="tabs" id="tabs"></nav>
+      <div class="panel-body" id="panelBody"></div>
+    </aside>
+  </main>
+  <div class="toast" id="toast"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
