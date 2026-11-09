@@ -1,34 +1,43 @@
-# Calculator
+# Graphite Scientific
 
-A simple calculator app for Windows.
+An offline scientific calculator for Windows with natural math display. Built with Electron and plain JavaScript.
 
 ## Download
 
-**[Download the latest installer (v1.1.1)](https://github.com/theaibot2011/Scientific-calculator/releases/tag/v1.1.1)**
+[**Download the latest release**](https://github.com/theaibot2011/Scientific-calculator/releases/latest)
 
-Older versions are on the [Releases page](https://github.com/theaibot2011/Scientific-calculator/releases/tag/v.1.0.0).
+Older versions are on the [Releases page](https://github.com/theaibot2011/Scientific-calculator/releases).
 
 ## Install
 
-1. Download `setup.exe` from the latest release
+1. Download `Graphite-Scientific-Setup-<version>.exe` from the latest release
 2. Double-click it and follow the installer
-3. Open Calculator from your Start menu or desktop
+3. Open Graphite Scientific from your Start menu or desktop
+
+## Verify your download
+
+Every release includes a SHA-256 hash and a VirusTotal scan in its release notes. To check your file, run this in PowerShell:
+
+    Get-FileHash .\Graphite-Scientific-Setup-<version>.exe -Algorithm SHA256
+
+If the hash matches the one in the release notes, the file is unmodified.
 
 ## Windows SmartScreen warning
 
-When you run the installer, Windows might say "Windows protected your PC" because the app isn't code-signed. To continue, click **More info**, then **Run anyway**.
+The app isn't code-signed yet, so Windows may say "Windows protected your PC". Click **More info**, then **Run anyway**.
 
-## Versions
+## Build from source
 
-| Version | Notes |
-|---------|-------|
-| v1.1.1 | Latest release |
-| v1.0.0 | First release |
+    npm ci
+    npm test
+    npm run dist
+
+The installer and portable exe appear in `dist/`.
 
 ## Requirements
 
 - Windows 10 or 11
 
-## Author
+## License
 
-Made by [theaibot2011](https://github.com/theaibot2011)
+MIT. See [LICENSE.txt](LICENSE.txt). Third-party notices are in [NOTICE.md](NOTICE.md).
