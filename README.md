@@ -4,9 +4,9 @@ A simple calculator app for Windows.
 
 ## Download
 
-**[Download the latest installer (v1.1.1)](https://github.com/theaibot2011/calculator/releases/latest)**
+**[Download the latest installer (v1.1.1)](https://github.com/theaibot2011/Scientific-calculator/releases/tag/v1.1.1)**
 
-Older versions are on the [Releases page](https://github.com/theaibot2011/calculator/releases).
+Older versions are on the [Releases page](https://github.com/theaibot2011/Scientific-calculator/releases/tag/v.1.0.0).
 
 ## Install
 
