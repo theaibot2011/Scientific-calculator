@@ -4,7 +4,7 @@ A simple calculator app for Windows.
 
 ## Download
 
-**[Download the latest installer (v1.0.1)](https://github.com/theaibot2011/calculator/releases/latest)**
+**[Download the latest installer (v1.1.1)](https://github.com/theaibot2011/calculator/releases/latest)**
 
 Older versions are on the [Releases page](https://github.com/theaibot2011/calculator/releases).
 
@@ -22,7 +22,7 @@ When you run the installer, Windows might say "Windows protected your PC" becaus
 
 | Version | Notes |
 |---------|-------|
-| v1.0.1 | Latest release |
+| v1.1.1 | Latest release |
 | v1.0.0 | First release |
 
 ## Requirements
