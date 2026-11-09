@@ -28,7 +28,7 @@
   "build": {
     "appId": "com.graphite.scientific",
     "productName": "Graphite Scientific",
-    "copyright": "Copyright © 2026 Graphite Scientific",
+    "copyright": "Copyright Â© 2026 Graphite Scientific",
     "directories": {
       "output": "dist",
       "buildResources": "build"
